@@ -1,0 +1,101 @@
+@import "fonts.css";
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Roboto Regular", sans-serif;
+}
+
+.container {
+    padding: 70px 0 64px;
+    width: 661px;
+    background-color: #C4C4C4;
+}
+
+.search {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.search-input {
+    width: 500px;
+    height: 61px;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+
+.search-list {
+    list-style: none;
+    padding: 0;
+}
+
+.search-list--hidden {
+    display: none;
+}
+
+.search-item--hidden {
+    display: none;
+}
+
+.search-button {
+    width: 500px;
+    height: 44px;
+    background: #E3E3E3;
+    border: 2px solid #000000;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+}
+
+.repos {
+    width: 500px;
+    margin: 71px auto 0;
+    list-style: none;
+    padding: 0;
+}
+
+.repos-item {
+    position: relative;
+    width: 500px;
+    height: 101px;
+    background: #E27BEB;
+    border: 1px solid #000000;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 8px 16px;
+}
+
+.repos-delete {
+    position: absolute;
+    width: 42px;
+    height: 39px;
+    top: 31px;
+    right: 34px;
+    background: #E27BEB;
+    border: none;
+}
+
+.repos-delete::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 45px;
+    background-color: red;
+    transform:
+            translate(-10px, 4px)
+            rotate(45deg);
+}
+
+.repos-delete::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 45px;
+    background-color: red;
+    transform:
+            translate(-10px)
+            rotate(-45deg);
+}
